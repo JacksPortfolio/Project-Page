@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="projectpage.css">
+    <title>Analyzing Traffic Signals and Motor Vehicle Collisions in Toronto</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Analyzing Traffic Signals and Motor Vehicle Collisions in Toronto</h1>
+        <h2>Introduction</h2>
+        <p>In my research, I looked at the Toronto traffic light and car accident databases. Information about driving methods, pedestrian signals, bicycle signs and other traffic sign functions can be found in the Liikenneopasteet database. In addition to accident conditions and severity, the motor vehicle accident database also contains information on accident types, severity of injuries and control methods at intersections.</p>
+        
+        <h2>Visualizations</h2>
+        <div class="chart-container">
+            <h3>Map of Traffic Signals and Motor Vehicle Collisions</h3>
+            <iframe src="https://api.mapbox.com/styles/v1/jchen1111/clxlgtl5j020i01qo62mj0xmt.html?title=false&access_token=pk.eyJ1IjoiamNoZW4xMTExIiwiYSI6ImNsd3J4bnFybTAxZnQycm9mNTRrNHJ0dDcifQ.uEjbl8eyKmtWLNUSk5GC_A&zoomwheel=false#15.98/43.648428/-79.388696" class="map" frameborder="0"></iframe> 
+        </div>
+        <div class="chart-container">
+            <h3>Infographic</h3>
+            <img src="Infographic.png" alt="Infographic showing insights from the data" class="infographic">
+        </div>
+
+        <h2>Insights and Analysis</h2>
+        <p>Collision Severity Distribution: <br><br> Most collisions resulted in no injuries (46.92%) or minor injuries (34.00%). Fatal collisions constituted a small percentage (5.15%).</p>
+        <p>Impact of Control Modes on Collision Severity: <br><br> The SA2 control mode had the highest total collision count (1,190 incidents), including the highest major injury collisions (384). <br><br> The PA-MPS mode had a significant proportion of fatal collisions (20 out of 114 incidents), indicating potential issues with pedestrian management.</p>
+        <p>Impact Type Analysis: <br><br> Collisions while going ahead were the most frequent, with 6,542 incidents, including 278 fatalities. <br><br> Collisions with no specified impact type were also high (7,953 incidents), highlighting a need for better data recording practices.</p>
+        <p>Approaches at Intersections: <br><br> Most intersections had three and five approaches, with four being the most common (1,866,687), suggesting that four-way intersections are the norm in Toronto.</p>
+        <p>Vehicle Involvement: <br><br> Automobiles had the highest collision rate, accounting for 78.52% of all incidents.</p>
+    
+        <h2>Design Decisions and Rationale</h2>
+        <p>The infographic features a central pie chart showing collision severity distribution. Branching out from the pie chart are five sections:</p>
+        <p>Top Right: Collision Severity by Control Mode: <br><br> A bar chart highlights the relationship between control modes and collision severity, focusing on the top five control modes.</p>
+        <p>Center Left: Frequency of Collisions by Impact Type: <br><br> This bar chart details how different driving behaviours and situations contribute to collisions.</p>
+        <p>Bottom Right: Presence of Audible Pedestrian Signals: <br><br> A bar chart shows the proportion of traffic signals with audible pedestrian signals.</p>
+        <p>Bottom Left: Collision Hotspot <br><br> This section visualizes the geographical distributions of collisions using a heatmap.</p>
+        <p>Top Center: Approaches at Intersections: <br><br> A line chart shows the distribution of the number of approaches at intersections.</p>
+        <p>Bottom Right: Vehicle Involvement: <br><br> A bar chart shows the distribution of collisions by vehicle type, highlighting that automobiles have the highest collision rate.</p>
+
+        <h2>Potential Real-World Applications</h2>
+        <p>Urban Planning and Traffic Management: <br><br> Planners can prioritize upgrades to high-collision intersections. <br><br>
+            Safety Campaigns: <br><br> Public awareness campaigns can target behaviours leading to high collision rates. <br><br>
+            Infrastructure Improvements: <br><br> Expanding the installation of audible and bicycle signals can enhance safety for pedestrians and cyclists.
+        </p>
+
+        <h2>Conclusion</h2>
+        <p>This project highlights how data analysis and visualization can uncover insights that drive meaningful urban safety improvements. Additionally, the findings can inform policy decisions to reduce collision rates and improve overall traffic safety in Toronto.</p>
+        
+        <h2>Data Sources</h2>
+        <p>Traffic Signals Dataset: <a href="https://open.toronto.ca/dataset/traffic-signals-tabular/">Link to dataset</a></p>
+        <p>Motor Vehicle Collisions Dataset: <a href="https://open.toronto.ca/dataset/motor-vehicle-collisions-involving-killed-or-seriously-injured-persons/">Link to dataset</a></p>
+    </div>
+</body>
+</html>
